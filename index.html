@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add Row</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <meta property="og:image" content="https://www.farinspace.com/wp-content/uploads/jquery_200x200.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src='main.js'></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".remove").click(function () {
+                $("th").remove();
+            })
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="main">
+            <h1>Hello Everyone</h1>
+            <div class="nav" onclick="addnewrow()">
+                <i class="fa fa-plus">&nbsp; Row</i>
+            </div>
+            <div class="p-d">
+                <div class="remove">
+                    <img src="6861362.png" class="dltimg">
+                    <i class="fa fa-hand-o-left"></i>
+                    <div class="cnct">Click this button and delete all rows</div>
+                </div>
+            </div>
+            <div class="table-1">
+                
+                <table id="mytable">
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+    </section>
+
+</body>
+
+</html>
